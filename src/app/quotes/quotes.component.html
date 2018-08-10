@@ -7,5 +7,5 @@
     <li *ngFor='let quote of quoted'>{{quote.quote}} -{{quote.author}}-</li>
   </ul>
 
-<app-quotes-form></app-quotes-form>
+<app-quotes-form (addQuote)="addNewQuotes($event)"></app-quotes-form>
 </div>

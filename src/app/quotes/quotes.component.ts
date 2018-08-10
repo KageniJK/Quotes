@@ -17,6 +17,12 @@ export class QuotesComponent implements OnInit {
     new Quotes (6, 'Hardships often prepare ordinary people for an extraordinary destiny.', 'C.S Lewis'),
   ];
 
+  addNewQuotes (quote) {
+    const quoteLength = this.quoted.length;
+    quote.id = quoteLength + 1;
+    this.quoted.push(quote);
+  }
+
   constructor() { }
 
   ngOnInit() {
