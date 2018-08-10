@@ -1,7 +1,11 @@
 <div class="container">
   <h1>Quotes</h1>
+<div class="container-fluid">
 
+</div>
   <ul>
-    <li *ngFor='let quote of quoted'>{{quote.quote}}</li>
+    <li *ngFor='let quote of quoted'>{{quote.quote}} -{{quote.author}}-</li>
   </ul>
+
+<app-quotes-form></app-quotes-form>
 </div>
