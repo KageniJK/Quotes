@@ -4,7 +4,7 @@
 
 </div>
   <ul>
-    <li *ngFor='let quote of quoted'>{{quote.quote}} -{{quote.author}}-</li>
+    <li *ngFor='let quote of quoted'>{{quote.id}} -{{quote.author}}-</li>
   </ul>
 
 <app-quotes-form (addQuote)="addNewQuotes($event)"></app-quotes-form>
