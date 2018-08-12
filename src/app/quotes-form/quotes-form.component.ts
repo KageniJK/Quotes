@@ -7,7 +7,7 @@ import {Quotes} from '../quotes';
   styleUrls: ['./quotes-form.component.css']
 })
 export class QuotesFormComponent implements OnInit {
-  newQuote = new Quotes(0, '', '', '');
+  newQuote = new Quotes(0, '', '', '', 0, 0, 0);
   @Output() addQuote = new EventEmitter<Quotes>();
 
   submitQuotes() {
