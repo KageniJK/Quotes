@@ -1,8 +1,7 @@
 <p>
   {{quote.submitter}}
-  <button type="button" class="btn btn-sm btn-primary">Upvote</button>
-  :{{quote.upvotes}}
-  <button type="button" class="btn btn-sm btn-primary">downote</button>
-  :{{quote.upvotes}}
+  Upvotes:{{quote.upvotes}}
+  Downvotes:{{quote.downvotes}}
+  Overall Votes:{{quote.toatalVotes}}
   <button type="button" class="btn btn-sm btn-danger" (click) = "delete(true)">Delete Quote</button>
 </p>

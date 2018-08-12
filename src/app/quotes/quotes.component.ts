@@ -9,7 +9,7 @@ import { Quotes } from '../quotes';
 export class QuotesComponent implements OnInit {
 
   quoted = [
-    new Quotes(1, 'Our greatest glory is not in never falling, but in rising every time we fall. ', 'Confusious', 'Kageni', 0, 0, 0),
+    new Quotes(1, 'Our greatest glory is not in never falling, but in rising every time we fall. ', 'Confusious', 'Kageni', 4, 0, 0),
     new Quotes(2, 'All our dreams can come true, if we have the courage to pursue them.', 'Walt Disney', 'Kageni', 0, 0, 0),
     new Quotes(3, 'It does not matter how slowly you go as long as you do not stop.', 'Confusious', 'Kageni', 0, 0, 0),
     new Quotes(4, 'Everything you’ve ever wanted is on the other side of fear. ', 'George Addair', 'Kageni', 0, 0, 0),
@@ -30,6 +30,14 @@ export class QuotesComponent implements OnInit {
       this.quoted.splice(index, 1);
     }
   }
+
+  upVote(index) {
+    this.quoted[index].upvotes += 1;
+  }
+
+  downVote(index) {
+      this.quoted[index].downvotes += 1;
+    }
 
   constructor() { }
 
