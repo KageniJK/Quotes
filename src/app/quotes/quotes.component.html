@@ -3,12 +3,12 @@
 <div class="container-fluid">
 
   <div class="jumbotron">
-    
+
   </div>
 
 </div>
   <ul>
-    <li *ngFor='let quote of quoted;let i = index'>"{{quote.quote}}" -{{quote.author}}- <button type="button" (click)="toggleDetails(i)">View</button>
+    <li *ngFor='let quote of quoted;let i = index'>"{{quote.quote}}" -{{quote.author}}- <button class="btn btn-sm" type="button" (click)="toggleDetails(i)">View</button>
     <app-quote-details *ngIf="quote.showDescription" [quote]='quote'></app-quote-details> </li>
   </ul>
 
