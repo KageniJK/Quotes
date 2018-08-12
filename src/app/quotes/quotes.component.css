@@ -1,11 +1,7 @@
 li{
-  font-size: 36px;
+  font-size: 30px;
 }
 
-button{
-  font-size: 22px;
-}
-
-container{
-  background-color: rgb(20, 203, 251);
+button {
+  margin: 5px;
 }

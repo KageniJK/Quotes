@@ -4,8 +4,8 @@
 </div>
   <ul>
     <li *ngFor='let quote of quoted;let i = index'>"{{quote.quote}}" -{{quote.author}}- <button class="btn btn-sm" type="button" (click)="toggleDetails(i)">View</button>
-    <button type="button" class="btn btn-sm btn-primary" (click)= "upVote(i)"><i class="fas fa-thumbs-up"></i></button>
-    <button type="button" class="btn btn-sm btn-primary" (click)= "downVote(i)">downote</button>
+    <button type="button" class="btn btn-sm btn-primary" (click)= "upVote(i)">up</button>    
+    <button type="button" class="btn btn-sm btn-primary" (click)= "downVote(i)">down</button>
     <app-quote-details *ngIf="quote.showDescription" [quote]='quote' (isComplete)= 'quoteComplete($event,i)'></app-quote-details> </li>
   </ul>
 
